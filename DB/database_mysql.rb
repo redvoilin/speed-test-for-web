@@ -2,7 +2,7 @@ require 'active_record'
 
 DB = {
     :adapter => 'mysql2',
-    :host => 'localhost',
+    :host => '192.168.61.128',
     :database => 'blog_development',
     :username => 'root',
     :password => ''
