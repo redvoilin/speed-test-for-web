@@ -1,0 +1,26 @@
+articles_page:
+  new_article_link:
+    :link: "New Article"
+  article_show_link:
+    :xpath: "/html/body/table/tbody/tr[1]/td[3]/a"
+  article_edit_link:
+    :xpath: "/html/body/table/tbody/tr[3]/td[4]/a"
+articles_new_page:
+  article_title_text:
+    :id: "article_title"
+  article_body_text:
+    :id: "article_body"
+  article_commit_button:
+    :name: "commit"
+article_show_page:
+  title_content:
+    :xpath: "/html/body/p[2]"
+  body_content:
+    :xpath: "/html/body/p[3]"
+articles_edit_page:
+  article_title_text:
+    :id: "article_title"
+  article_body_text:
+    :id: "article_body"
+  article_commit_button:
+    :name: "commit"
