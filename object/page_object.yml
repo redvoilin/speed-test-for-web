@@ -5,6 +5,10 @@ articles_page:
     :xpath: "/html/body/table/tbody/tr[1]/td[3]/a"
   article_edit_link:
     :xpath: "/html/body/table/tbody/tr[3]/td[4]/a"
+  articles_destroy_link:
+    :xpath: "/html/body/table/tbody/tr[1]/td[5]/a"
+  article_title:
+    :xpath: "/html/body/table/tbody/tr[1]/td[1]"
 articles_new_page:
   article_title_text:
     :id: "article_title"

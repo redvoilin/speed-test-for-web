@@ -62,4 +62,15 @@ describe "博客" do
     expect(article.title).to eq title
     expect(article.body).to eq body
   end
+
+  it "应该能成功删除博文" do
+    @browser.get @uri + "articles"
+    @wait.until{ isPageLoaded(@browser) }
+    article_title = @browser.find_element($object["articles_page"]["article_title"]).text
+    @browser.find_element($object["articles_page"]["articles_destroy_link"]).click
+    @browser.switch_to.alert.accept
+    sleep 1
+    article = Article.where(title: article_title).first
+    expect(article).to eq nil
+  end
 end
